@@ -3,112 +3,274 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priya's Portfolio</title>
-  <link rel="stylesheet" href="index.css">
+  <title>R. Priya | IT Undergraduate & Web Developer</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap">
 </head>
 <body>
 
-  <!-- Header -->
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header Navigation -->
   <header>
     <nav class="navbar">
-      <h1 class="logo">MyPortfolio</h1>
-      <ul class="nav-links">
+      <a href="#home" class="logo">R.Priya<span class="dot">.dev</span></a>
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Co-Curricular</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-content">
-      <!-- Added Profile Image -->
-      <img src="image_0.png" alt="Profile Image" class="profile-image">
-      <h2>Hello, I'm <span>priya</span></h2>
-      <p>A passionate web developer who loves creating clean and functional websites.</p>
-      <a href="#projects" class="btn">View My Work</a>
+  <!-- Home / Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <span class="badge"><i class="fa-solid fa-graduation-cap"></i> B.Tech IT Undergraduate</span>
+        <h1>Hi, I'm <span class="gradient-text">R. Priya</span></h1>
+        <h2 class="typing-text">Passionate <span id="typed"></span></h2>
+        
+        <!-- VCET & Academic Intro -->
+        <p class="hero-description">
+          Studying <b>B.Tech Information Technology</b> at <b>Velalar College of Engineering and Technology, Erode</b>. 
+          I bridge design vision and clean code—turning UI concepts into modern, responsive web experiences.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#activities" class="btn primary-btn">Explore Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact" class="btn glass-btn"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+      
+      <!-- Profile Picture Frame -->
+      <div class="hero-image-wrapper">
+        <div class="image-frame">
+          <img src="profile.jpg" alt="R. Priya Profile Picture" class="profile-img">
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p><b>
-        I’m a passionate Web Developer who loves building clean and responsive websites.
-I have strong skills in HTML, CSS, JavaScript, and enjoy turning ideas into reality through code.
-I focus on creating user-friendly designs with smooth functionality.
-Always eager to learn new technologies and improve my development skills.
-    </p></b>
+  <section id="about" class="section">
+    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+    <div class="about-card glass-card">
+      <div class="about-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      <p>
+        I am a creative logic-builder and front-end developer who loves building user-centric websites. 
+        Driven by curiosity, I enjoy transforming complex problems into simple, beautiful digital solutions. 
+        Whether designing sleek user flows or writing clean, reliable code, I thrive on continuous learning and innovation in web technologies and artificial intelligence.
+      </p>
+    </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language Logo">
-        <p>C</p>
+  <section id="skills" class="section">
+    <h2 class="section-title">Web Development <span class="gradient-text">Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <h3>HTML5</h3>
       </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
-        <p>Python</p>
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <h3>CSS3</h3>
       </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Logo">
-        <p>HTML</p>
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <h3>JavaScript</h3>
       </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Logo">
-        <p>CSS</p>
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C">
+        <h3>C Language</h3>
       </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo">
-        <p>JavaScript</p>
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <h3>Python</h3>
       </div>
-      <div class="skill-card">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo">
-        <p>Java</p>
+      <div class="skill-card glass-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+        <h3>Figma UI Design</h3>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>Innovation and Presention</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>I have completed projects including a Portfolio Website, a Student Result Management System, and a Weather Forecast App using HTML, CSS, and JavaScript.</p>
+  <!-- Co-Curricular Activities Section -->
+  <section id="activities" class="section">
+    <h2 class="section-title">Co-Curricular <span class="gradient-text">Activities</span></h2>
+    <div class="cards-grid">
+      
+      <div class="activity-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+        <h3>Paper Presentation</h3>
+        <p class="subtitle">Dr. N.G.P. Institute of Technology</p>
+        <p>Presented a research paper on <b>"Waste Recycling using Deep Learning"</b>, demonstrating automated waste sorting models using neural networks.</p>
       </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>I have also presented papers at reputed colleges such as KPR College of Technology on “Artificial Intelligence in Web Development”.</p>
+
+      <div class="activity-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <h3>MERN Stack Workshop</h3>
+        <p class="subtitle">Full-Stack Development</p>
+        <p>Participated in a practical hands-on workshop focused on constructing dynamic web applications using MongoDB, Express.js, React, and Node.js.</p>
       </div>
-      <div class="project-card">
-        <h3>Presention 1</h3>
-        <p> I presented at Nandha Engineering College on “Cloud Computing Security”.</p>
+
+      <div class="activity-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>AI/ML Workshop</h3>
+        <p class="subtitle">MindfulAI</p>
+        <p>Gained hands-on exposure to foundational machine learning workflows, predictive algorithms, and real-world AI applications.</p>
       </div>
-      <div class="project-card">
-        <h3>Presention 2</h3>
-        <p>I presented at PSG College of Technology on “Data Privacy in IoT Applications”..</p>
+
+      <div class="activity-card glass-card">
+        <div class="card-icon"><i class="fa-solid fa-bug"></i></div>
+        <h3>Technical Debugging Event</h3>
+        <p class="subtitle">Coding Contest</p>
+        <p>Participated in competitive code-debugging challenges—testing problem-solving velocity, logic verification, and syntax correction.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section">
+    <h2 class="section-title">Verified <span class="gradient-text">Certifications</span></h2>
+    <div class="cert-grid">
+      <div class="cert-card glass-card">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <h3>C Programming</h3>
+        <p>Foundational programming logic, pointers, memory management, and data structures.</p>
+      </div>
+
+      <div class="cert-card glass-card">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <h3>Full Stack Web Development</h3>
+        <p>End-to-end training covering client-side styling, dynamic scripting, database management, and server architecture.</p>
+      </div>
+
+      <div class="cert-card glass-card">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <h3>Cloud Computing (NPTEL)</h3>
+        <p>Core concepts of virtualization, cloud service models (IaaS, PaaS, SaaS), and distributed architecture.</p>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Want to work together? Reach out via email!</p>
-    <!-- Corrected the mailto link -->
-    <a href="mailto:rpriya2345r@gmail.com" class="btn">Email Me</a>
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact <span class="gradient-text">Info</span></h2>
+    <div class="contact-wrapper glass-card">
+      <p class="contact-intro">Feel free to reach out for project collaborations or technical discussions!</p>
+      
+      <div class="contact-links-grid">
+        <a href="mailto:rpriya2345r@gmail.com" class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <span>Email</span>
+            <p>rpriya2345r@gmail.com</p>
+          </div>
+        </a>
+
+        <a href="tel:+919876543210" class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span>Phone</span>
+            <p>+91 98765 43210</p>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/r-priya" target="_blank" class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <span>LinkedIn</span>
+            <p>linkedin.com/in/r-priya</p>
+          </div>
+        </a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p> priya | All Rights Reserved</p>
+    <p>&copy; 2026 R. Priya | Velalar College of Engineering and Technology</p>
   </footer>
 
+  <!-- EMBEDDED JAVASCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 1. Dynamic Typing Effect
+      const words = ["Web Developer", "UI/UX Enthusiast", "IT Student @ VCET"];
+      let i = 0;
+      let timer;
+
+      function typingEffect() {
+        let word = words[i].split("");
+        var loopTyping = function() {
+          if (word.length > 0) {
+            document.getElementById('typed').innerHTML += word.shift();
+          } else {
+            setTimeout(deletingEffect, 2000);
+            return false;
+          }
+          timer = setTimeout(loopTyping, 100);
+        };
+        loopTyping();
+      }
+
+      function deletingEffect() {
+        let word = words[i].split("");
+        var loopDeleting = function() {
+          if (word.length > 0) {
+            word.pop();
+            document.getElementById('typed').innerHTML = word.join("");
+          } else {
+            if (words.length > (i + 1)) {
+              i++;
+            } else {
+              i = 0;
+            }
+            typingEffect();
+            return false;
+          }
+          timer = setTimeout(loopDeleting, 50);
+        };
+        loopDeleting();
+      }
+
+      typingEffect();
+
+      // 2. Mobile Navigation Menu Toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+        });
+      }
+
+      // Close mobile navigation menu on link click
+      const navItems = document.querySelectorAll(".nav-links a");
+      navItems.forEach(item => {
+        item.addEventListener("click", () => {
+          if (navLinks.classList.contains("active")) {
+            navLinks.classList.remove("active");
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
